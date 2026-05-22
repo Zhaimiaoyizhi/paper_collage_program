@@ -1,10 +1,12 @@
-# paper_collage_program
+# 论文万花筒 / Paper Kaleidoscope
 
 中文 | [English](#english)
 
 ## 中文
 
-`paper_collage_program` 是一个双入口仓库，用来把真实论文 PDF 的第一页整理成适合 PPT 使用的排布图。
+**论文万花筒（Paper Kaleidoscope）** 是一个长期维护的双入口项目，用来把真实论文 PDF 的第一页整理成适合展示、汇报和 PPT 使用的论文首页排布图。
+
+项目坚持一个边界：只使用真实论文 PDF 的第一页，不生成、不仿造、不用占位封面。
 
 - `program/`：面向普通用户的 Python 程序入口。输入论文网站链接列表，输出真实论文首页拼图。
 - `skill/`：面向 agent 的 workflow skill。用于引导“搜索相关文献 -> 用户确认最终文献 -> 自动生成排布图”的完整流程。
@@ -62,9 +64,9 @@ playwright install chromium
 ```powershell
 python program/run_paper_collage_from_sites.py `
   --input program/sample_paper_sites.csv `
-  --output output/real_paper_cover_collage_16x9.png `
-  --pdf-output output/real_paper_cover_collage_16x9.pdf `
-  --pptx-output output/real_paper_cover_collage_16x9_editable.pptx
+  --output output/paper_kaleidoscope_16x9.png `
+  --pdf-output output/paper_kaleidoscope_16x9.pdf `
+  --pptx-output output/paper_kaleidoscope_16x9_editable.pptx
 ```
 
 TXT 用法相同：
@@ -72,7 +74,7 @@ TXT 用法相同：
 ```powershell
 python program/run_paper_collage_from_sites.py `
   --input program/sample_paper_sites.txt `
-  --output output/real_paper_cover_collage_16x9.png
+  --output output/paper_kaleidoscope_16x9.png
 ```
 
 ### 输出
@@ -90,7 +92,9 @@ python program/run_paper_collage_from_sites.py `
 
 ## English
 
-`paper_collage_program` is a dual-entry repository for turning real paper PDFs into PPT-ready first-page collages.
+**Paper Kaleidoscope** is a long-term dual-entry project for turning real paper PDF first pages into PPT-ready visual collages for talks, reports, and research presentations.
+
+The project keeps one strict boundary: it only uses real first pages from real paper PDFs. It does not generate fake covers, imitate paper pages, or create placeholders.
 
 - `program/`: the standalone Python program for end users. It takes a list of paper website URLs and generates a collage from real first-page PDFs.
 - `skill/`: the agent workflow skill for the full flow from literature search to final collage generation.
@@ -148,9 +152,9 @@ playwright install chromium
 ```powershell
 python program/run_paper_collage_from_sites.py `
   --input program/sample_paper_sites.csv `
-  --output output/real_paper_cover_collage_16x9.png `
-  --pdf-output output/real_paper_cover_collage_16x9.pdf `
-  --pptx-output output/real_paper_cover_collage_16x9_editable.pptx
+  --output output/paper_kaleidoscope_16x9.png `
+  --pdf-output output/paper_kaleidoscope_16x9.pdf `
+  --pptx-output output/paper_kaleidoscope_16x9_editable.pptx
 ```
 
 TXT works the same way:
@@ -158,7 +162,7 @@ TXT works the same way:
 ```powershell
 python program/run_paper_collage_from_sites.py `
   --input program/sample_paper_sites.txt `
-  --output output/real_paper_cover_collage_16x9.png
+  --output output/paper_kaleidoscope_16x9.png
 ```
 
 ### Outputs

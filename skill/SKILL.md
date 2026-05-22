@@ -1,9 +1,9 @@
 ---
-name: paper-literature-collage-workflow
-description: Use when a user wants an end-to-end workflow for searching papers, selecting a final list, downloading real article PDFs, and generating a PPT-ready collage or editable PPTX from those papers.
+name: paper-kaleidoscope-workflow
+description: Use when a user wants an end-to-end Paper Kaleidoscope workflow for searching papers, selecting a final list, downloading real article PDFs, and generating a PPT-ready collage or editable PPTX from those papers.
 ---
 
-# Paper Literature Collage Workflow
+# Paper Kaleidoscope Workflow
 
 ## Overview
 
@@ -11,10 +11,11 @@ Guide the user from topic discovery to a finished paper-first-page collage. The 
 
 ## When to Use
 
+- User wants "论文万花筒"
 - User wants "搜索文献然后做论文首页拼图"
 - User wants help turning a research topic into a paper collage
 - User needs an agent-guided flow from paper search to final PNG/PDF/PPTX
-- User wants a CSV/TXT input file prepared and then run through the collage program
+- User wants a CSV/TXT input file prepared and then run through Paper Kaleidoscope
 
 Do not use this skill if the user already has the final paper list and only wants a tiny one-off script tweak.
 
@@ -31,9 +32,9 @@ Do not use this skill if the user already has the final paper list and only want
 ```powershell
 python program/run_paper_collage_from_sites.py `
   --input <papers.csv-or-txt> `
-  --output output/real_paper_cover_collage_16x9.png `
-  --pdf-output output/real_paper_cover_collage_16x9.pdf `
-  --pptx-output output/real_paper_cover_collage_16x9_editable.pptx
+  --output output/paper_kaleidoscope_16x9.png `
+  --pdf-output output/paper_kaleidoscope_16x9.pdf `
+  --pptx-output output/paper_kaleidoscope_16x9_editable.pptx
 ```
 
 6. If institution login blocks download, rerun with:
@@ -43,7 +44,7 @@ python program/run_paper_collage_from_sites.py `
   --input <papers.csv-or-txt> `
   --interactive-login `
   --login-timeout 1200 `
-  --output output/real_paper_cover_collage_16x9.png
+  --output output/paper_kaleidoscope_16x9.png
 ```
 
 7. Deliver:

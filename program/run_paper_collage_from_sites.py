@@ -18,10 +18,10 @@ from paper_collage_core import (  # noqa: E402
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        description="Create a real-paper collage from a CSV or TXT file of article URLs."
+        description="Paper Kaleidoscope: create a real-paper first-page collage from CSV or TXT article URLs."
     )
     parser.add_argument("--input", required=True, help="CSV or TXT file containing paper website URLs.")
-    parser.add_argument("--output", default="output/real_paper_cover_collage_16x9.png")
+    parser.add_argument("--output", default="output/paper_kaleidoscope_16x9.png")
     parser.add_argument("--pdf-output", default=None)
     parser.add_argument("--pptx-output", default=None)
     parser.add_argument("--cache-dir", default="pdf_cache")

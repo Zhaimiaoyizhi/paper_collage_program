@@ -1,6 +1,6 @@
 # Program Entry
 
-This directory contains the standalone Python program.
+This directory contains the standalone Python program for Paper Kaleidoscope.
 
 ## Main entry
 

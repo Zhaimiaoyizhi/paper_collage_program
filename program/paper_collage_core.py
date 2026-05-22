@@ -1184,8 +1184,8 @@ def run_collage_pipeline(
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description="Create a collage from real paper PDF first pages.")
-    parser.add_argument("--output", default="output/real_paper_cover_collage_16x9.png")
+    parser = argparse.ArgumentParser(description="Paper Kaleidoscope: create a collage from real paper PDF first pages.")
+    parser.add_argument("--output", default="output/paper_kaleidoscope_16x9.png")
     parser.add_argument("--pdf-output", default=None)
     parser.add_argument("--pptx-output", default=None)
     parser.add_argument("--cache-dir", default="pdf_cache")

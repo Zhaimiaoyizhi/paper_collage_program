@@ -1,6 +1,6 @@
 # Skill Entry
 
-This directory contains the agent workflow skill for the literature-to-collage flow.
+This directory contains the Paper Kaleidoscope agent workflow skill.
 
 - Main entry: `skill/SKILL.md`
 - Purpose: guide an agent through search, selection, input-file creation, program execution, and optional interactive login
