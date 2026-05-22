@@ -1,0 +1,7 @@
+requests
+beautifulsoup4
+pymupdf
+pillow
+python-pptx
+# Optional for automatic institution-login continuation:
+# playwright

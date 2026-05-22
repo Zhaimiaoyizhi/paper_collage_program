@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.playwright_login_profile/
+pdf_cache/
+page1_cache/
+output/
